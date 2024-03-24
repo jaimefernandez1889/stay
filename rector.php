@@ -19,9 +19,6 @@ return static function (RectorConfig $rectorConfig): void {
     ]);
 
     $rectorConfig->skip([
-        __DIR__ . '/apps/backoffice/backend/var',
-        __DIR__ . '/apps/backoffice/frontend/var',
         __DIR__ . '/apps/mooc/backend/var',
-        __DIR__ . '/apps/mooc/frontend/var',
     ]);
 };

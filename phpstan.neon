@@ -8,10 +8,7 @@ parameters:
 		- ./src
 		- ./tests
 	excludePaths:
-		- ./apps/backoffice/backend/var
-		- ./apps/backoffice/frontend/var
 		- ./apps/mooc/backend/var
-		- ./apps/mooc/frontend/var
 
 services:
 	-

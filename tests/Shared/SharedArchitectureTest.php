@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace CodelyTv\Tests\Shared;
 
-use CodelyTv\Backoffice\Auth\Application\Authenticate\AuthenticateUserCommand;
 use CodelyTv\Shared\Domain\Bus\Event\DomainEventSubscriber;
 use CodelyTv\Shared\Domain\Bus\Query\Response;
 use CodelyTv\Tests\Shared\Infrastructure\ArchitectureTest;
@@ -41,7 +40,6 @@ final class SharedArchitectureTest
 				Selector::inNamespace('CodelyTv\Shared'),
 				// This need to be refactored
 				Selector::classname(MySqlDatabaseCleaner::class),
-				Selector::classname(AuthenticateUserCommand::class),
 			);
 	}
 
